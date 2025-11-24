@@ -13,7 +13,7 @@ MyView(store: MyViewStore(navigator: navigator))
 Simply leverage the power of @EnvironmentObject and navigate directly on the view. By default, every view has direct access to a Navigator object just by 
 
 ```swift
-typealias Navigator = ChildRouter<ParentRouter<Screen>> // Optional, but recommended. Easier to write but needs to be done by the client to specialize the Screen generic.
+typealias Navigator = ChildRouter<ParentRouter<Screen>> // Optional
 
 struct MyView: View {
   @EnvironmentObject private var navigator: Navigator
